@@ -1,2 +1,2 @@
 # Mountains
-mountains pics using Unsplash API
+Mountain pics using Unsplash API
