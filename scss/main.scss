@@ -1,3 +1,113 @@
+
+
+html {
+	//Makes 1 rem equl to 10px
+    
+    font-size: 62.5% ;
+}
+
+body{
+    font: 1.6rem/ 1.25  Arial, sans-serif, Georgia;
+   margin: 0 auto;
+    
+    
+}
+
+
 p{
-    color:aqua;
+    color:black;
+}
+
+   .wrapper
+{
+  
+     max-width: 600px;
+     margin-left: auto;
+     margin-right: auto;
+    
+}
+#results{
+   
+    
+}
+
+ ul{
+        padding: 0;
+        margin-left: 1em;
+        margin-right: 1em;
+        //display: inline-block;
+   //     display: flex;
+     //   justify-content: center;
+       // flex-wrap: wrap;
+        list-style-type: none;
+     
+     li{
+         float:left;
+         display: inline-block;
+        
+  
+    .titles{
+       
+        padding-top: 3px;
+        height: 60px;
+        width: 100%;
+        background-color: black;
+        opacity: .75;
+        transform: translate(0,-68px);
+        animation-name: fadeIn;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        
+    h2{
+        
+        background-image: url(../image-gallery-assets/UserIconOpt.svg);
+        background-repeat: no-repeat;
+        font-size: .75em;
+        color:white;
+        padding-left: 20px;
+        
+        margin-left: 10px;
+    }
+    h3{
+        background-image: url(../image-gallery-assets/HeartOpt.svg);
+        background-repeat: no-repeat;
+        font-size: .65em;
+        color:white;
+        padding-left: 20px;
+        margin-left: 10px;
+    }
+    }
+    }
+}
+
+   footer{
+       clear: both;
+        p{
+            font-size: .5em;
+        }
+    }
+     @keyframes fadeIn{
+        0%{opacity:0; }
+        100%{opacity: .75;}
+      
+    }
+
+@media  (min-width:600px) {
+   
+    .wrapper{
+        max-width: 1000px;
+    }
+    
+    .titles{
+        h2{
+            font-size: 10em;
+        }
+        h3{
+            font-size: 1.25em;
+        }
+    }
+    li{
+        overflow: auto;
+    }
 }

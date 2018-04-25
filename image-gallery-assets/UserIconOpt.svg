@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Person" x="0" y="0" viewBox="0 0 18.7 18.7" enable-background="new 0 0 18.7 18.7" xml:space="preserve">
+  <g id="user-icon" transform="translate(0.666667, 0.208333)">
+    <path id="Head" fill="#4A4A4A" d="M8.7 9.1c2.6 0 4.7-2.1 4.7-4.7s-2.1-4.7-4.7-4.7S4 1.9 4 4.5 6.1 9.1 8.7 9.1z"/>
+    <path id="Body" fill="#4A4A4A" d="M8.7 10.3c-5.5 0-9.3 2.9-9.3 7v1.2H18v-1.2C18 13.2 14.2 10.3 8.7 10.3z"/>
+  </g>
+</svg>
