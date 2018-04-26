@@ -28,10 +28,10 @@ p{
 }
 
 img{
-    border-radius: 8px;
-    object-fit: cover;
-    width: 300px;
-    height: 300px;
+  //  border-radius: 8px;
+ //   object-fit: cover;
+    // width: 300px;
+    //height: 300px;
 }
 
  ul{
@@ -59,7 +59,28 @@ img{
         animation-duration: 10s;
         animation-timing-function: linear;
         animation-iteration-count: 1;
-        
+        @media (min-width:800px) {
+            
+            position: absolute;
+            bottom: 0;
+            left:0;
+            right:0;
+            overflow:hidden;
+            width: 94%;
+            height: 0;
+            transition: .5s ease;
+            transform: translate(0,-10px);
+            margin-left: 10px;
+            
+           animation-name: none;
+           // animation-duration: .5s;
+           //animation-timing-function: linear;
+            
+          // animation-iteration-count: 1;
+            //transform: translate(0,0);
+          //  opacity: 0;
+            
+        }
       
         
         
@@ -107,6 +128,8 @@ img{
       
     }
 
+ 
+
 @media  (min-width:600px) {
    
   li{
@@ -116,31 +139,33 @@ img{
 
 
 
-     @media  (min-width:800px) {
+     @media (min-width:800px) {
     
-       .titles{
-       transform: translate(0,0);
-       animation-name: imageHover;
-       }
-    
-    
-      li:hover .titles{
+         img{
+             display: block;
+             width: 100%;
+             height: auto;
+              object-fit: cover;
+              width: 300px;
+            height: 300px;
+         }
+         li{
+             position: relative;
+         }
+      
+     li:hover .titles{
         
-        animation-name: imageHover;
-        animation-duration: .5s;
-        animation-timing-function: linear;
-        animation-iteration-count: 1;
-        
-    }
-    
-    @keyframes imageHover{
-        0%{
-            transform: translate(0,0);
-            overflow: hidden;
-        }
-        
+         height: 30%
+       // animation-name: imageHover;
+      //  animation-duration: .5s;
+      //  animation-timing-function: linear;
+     //   animation-iteration-count: 1;
         
     }
+
+   
+    
+  
     
 
   li{
