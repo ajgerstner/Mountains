@@ -9,9 +9,15 @@ p {
   color: black; }
 
 .wrapper {
-  max-width: 600px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto; }
+
+img {
+  border-radius: 8px;
+  object-fit: cover;
+  width: 300px;
+  height: 300px; }
 
 ul {
   padding: 0;
@@ -22,6 +28,8 @@ ul {
   flex-wrap: wrap;
   list-style-type: none; }
   ul .titles {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     padding-top: 3px;
     height: 60px;
     width: 100%;
@@ -39,6 +47,10 @@ ul {
       color: white;
       padding-left: 20px;
       margin-left: 10px; }
+      @media (min-width: 800px) {
+        ul .titles h2 {
+          font-size: .9em;
+          padding-left: 25px; } }
     ul .titles h3 {
       background-image: url(../image-gallery-assets/HeartOpt.svg);
       background-repeat: no-repeat;
@@ -46,6 +58,10 @@ ul {
       color: white;
       padding-left: 20px;
       margin-left: 10px; }
+      @media (min-width: 800px) {
+        ul .titles h3 {
+          font-size: .8em;
+          padding-left: 25px; } }
 
 footer p {
   font-size: .5em; }
@@ -57,11 +73,21 @@ footer p {
     opacity: .75; } }
 
 @media (min-width: 600px) {
-  .wrapper {
-    max-width: 1000px; }
   li {
     padding: 5px; } }
 
 @media (min-width: 800px) {
+  .titles {
+    transform: translate(0, 0);
+    animation-name: imageHover; }
+  li:hover .titles {
+    animation-name: imageHover;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1; }
+  @keyframes imageHover {
+    0% {
+      transform: translate(0, 0);
+      overflow: hidden; } }
   li {
     padding: 10px; } }
