@@ -128,16 +128,16 @@ footer {
 
 @media (min-width: 600px) {
   li {
-    padding: 5px; } }
-
-@media (min-width: 800px) {
+    padding: 5px; }
   img {
     display: block;
     width: 100%;
     height: auto;
     object-fit: cover;
     width: 300px;
-    height: 300px; }
+    height: 300px; } }
+
+@media (min-width: 800px) {
   li {
     position: relative; }
   li:hover .titles {

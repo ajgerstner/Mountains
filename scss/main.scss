@@ -192,13 +192,7 @@ img{
   li{
         padding: 5px;
     }
-}
-
-
-
-     @media (min-width:800px) {
-    
-         img{
+    img{
              display: block;
              width: 100%;
              height: auto;
@@ -206,6 +200,13 @@ img{
               width: 300px;
             height: 300px;
          }
+}
+
+
+
+     @media (min-width:800px) {
+    
+         
          li{
              position: relative;
          }
