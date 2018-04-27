@@ -2,10 +2,6 @@
 // data to the #results section
 
 
-var search;
-
-//var to get the stored data
-var t=localStorage.getItem("searchEntered");
 
 
 //First you must create XMLHttpRequest object
@@ -54,16 +50,13 @@ for( var i = 0; i < responseObject.results.length; i++)
         
          if(document.getElementById('results')){
          //update the page with the new content
-      var listUpdated = document.getElementById('results');
+      const listUpdated = document.getElementById('results');
       listUpdated.innerHTML = apiData;
       localStorage.setItem("searchEntered",apiData);
         } }};
  
 
 
-//search event listeners
-//document.getElementById("results").addEventListener("onload", SearchFunction);
-//--document.getElementById("button").addEventListener("click",SearchFunction);
 
 
 //function to input search text
@@ -71,10 +64,6 @@ window.onload =
 function () {
     document.clear();
  
-   //- search = document.getElementById("searchInput");
-
-    //prepare the request 
-  //-  event.preventDefault();
     
 xhr.open ('GET','https://api.unsplash.com/search/photos?random&per_page=9&query=mountain&client_id=e324c68611b84de22939d8f715a233ec7587e501a2164a618cb0990e3c07ad01',true);
 //send the request
@@ -83,8 +72,16 @@ xhr.send(null); // no data needs to be sent to server
 
 
 
-//displaying stored data 
 
-     var listUpdated = document.getElementById('results');
-      listUpdated.innerHTML = t;  
+
+document.getElementById("logo").addEventListener("click",bob);
+
+function bob()
+{ alert("hello")
+    document.getElementById("logo").className="BackPeakAnim";
+   
+  //  document.getElementById("FrontPeak").className="FrontPeakAnim"; 
+
+};
+
    

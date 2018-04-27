@@ -27,13 +27,38 @@ p{
     
 }
 
-img{
-  //  border-radius: 8px;
- //   object-fit: cover;
-    // width: 300px;
-    //height: 300px;
+#logo{
+    width:150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
 }
 
+.red{
+    background-color: aqua;
+}
+//#logo:active #BackPeak{
+.BackPeakAnim{
+    
+    //transform: translate(21px,14px);
+    animation-name: logoCombineBack;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    
+ 
+
+}
+
+//#logo:active #FrontPeak{
+.FrontPeakAnim{
+    
+    animation-name: logoCombineFront;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1; 
+
+}
+ 
  ul{
         padding: 0;
         margin-left: 1em;
@@ -127,7 +152,18 @@ img{
         100%{opacity: .75;}
       
     }
-
+    
+    @keyframes logoCombineBack {
+         from{transform: translate(21px,14px)
+             }
+        to{transform: translate(0,0)
+            }
+    }
+        @keyframes logoCombineFront {
+         0%{transform: translate(-27px,-11px)
+             }
+        100%{opacity: .75}
+    }
  
 
 @media  (min-width:600px) {
@@ -155,18 +191,9 @@ img{
       
      li:hover .titles{
         
-         height: 30%
-       // animation-name: imageHover;
-      //  animation-duration: .5s;
-      //  animation-timing-function: linear;
-     //   animation-iteration-count: 1;
-        
+         height: 25%
+     
     }
-
-   
-    
-  
-    
 
   li{
         padding: 10px;

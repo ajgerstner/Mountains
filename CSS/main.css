@@ -13,6 +13,26 @@ p {
   margin-left: auto;
   margin-right: auto; }
 
+#logo {
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px; }
+
+.red {
+  background-color: aqua; }
+
+.BackPeakAnim {
+  animation-name: logoCombineBack;
+  animation-duration: 2s;
+  animation-timing-function: linear; }
+
+.FrontPeakAnim {
+  animation-name: logoCombineFront;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1; }
+
 ul {
   padding: 0;
   margin-left: 1em;
@@ -79,6 +99,18 @@ footer p {
   100% {
     opacity: .75; } }
 
+@keyframes logoCombineBack {
+  from {
+    transform: translate(21px, 14px); }
+  to {
+    transform: translate(0, 0); } }
+
+@keyframes logoCombineFront {
+  0% {
+    transform: translate(-27px, -11px); }
+  100% {
+    opacity: .75; } }
+
 @media (min-width: 600px) {
   li {
     padding: 5px; } }
@@ -94,6 +126,6 @@ footer p {
   li {
     position: relative; }
   li:hover .titles {
-    height: 30%; }
+    height: 25%; }
   li {
     padding: 10px; } }
