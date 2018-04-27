@@ -65,23 +65,27 @@ function () {
     document.clear();
  
     
-xhr.open ('GET','https://api.unsplash.com/search/photos?random&per_page=9&query=mountain&client_id=e324c68611b84de22939d8f715a233ec7587e501a2164a618cb0990e3c07ad01',true);
+xhr.open ('GET','https://api.unsplash.com/search/photos?random&per_page=24&query=mountain&client_id=e324c68611b84de22939d8f715a233ec7587e501a2164a618cb0990e3c07ad01',true);
 //send the request
 xhr.send(null); // no data needs to be sent to server
    };
 
 
 
+    const object = document.getElementById("MountainLogo");
+    const back = object.getElementById("BackPeak");
+    const front = object.getElementById("FrontPeak");
 
+document.getElementById("logo").addEventListener("click",jim,false);
+document.getElementById("logo").addEventListener("click",function(){
+    setTimeout(function(){back.setAttribute("class", "");
+    front.setAttribute("class","");},3000);
 
-document.getElementById("logo").addEventListener("click",bob);
+},false);
 
-function bob()
-{ alert("hello")
-    document.getElementById("logo").className="BackPeakAnim";
-   
-  //  document.getElementById("FrontPeak").className="FrontPeakAnim"; 
-
-};
-
+function jim(){
+    
+    back.setAttribute("class", "BackPeakAnim");
+    front.setAttribute("class","FrontPeakAnim");
+}
    

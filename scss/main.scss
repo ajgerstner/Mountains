@@ -8,8 +8,8 @@ html {
 
 body{
     font: 1.6rem/ 1.25  Arial, sans-serif, Georgia;
-   margin: 0 auto;
-    
+    margin: 0 auto;
+    background-color: lightgray;
     
 }
 
@@ -27,6 +27,7 @@ p{
     
 }
 
+
 #logo{
     width:150px;
     margin-left: auto;
@@ -37,7 +38,7 @@ p{
 .red{
     background-color: aqua;
 }
-//#logo:active #BackPeak{
+
 .BackPeakAnim{
     
     //transform: translate(21px,14px);
@@ -49,7 +50,7 @@ p{
 
 }
 
-//#logo:active #FrontPeak{
+
 .FrontPeakAnim{
     
     animation-name: logoCombineFront;
@@ -63,7 +64,7 @@ p{
         padding: 0;
         margin-left: 1em;
         margin-right: 1em;
-        //display: inline-block;
+        
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -81,7 +82,7 @@ p{
         opacity: .75;
         transform: translate(0,-68px);
         animation-name: fadeIn;
-        animation-duration: 10s;
+        animation-duration: 5s;
         animation-timing-function: linear;
         animation-iteration-count: 1;
         @media (min-width:800px) {
@@ -114,10 +115,11 @@ p{
         
         background-image: url(../image-gallery-assets/UserIconOpt.svg);
         background-repeat: no-repeat;
-        font-size: .75em;
+        //font-size: .75em;
         color:white;
         padding-left: 20px;
         margin-left: 10px;
+        font: .75em EloquentJFSmallCapsPro;
         
         @media (min-width:800px){
             font-size: .9em;
@@ -142,10 +144,19 @@ p{
 }
 
    footer{
+       display: flex;
+       justify-content: center;
       
         p{
             font-size: .5em;
+        
+          
+            @media (min-width:800px){
+           font-size: .75em;
         }
+            
+        }
+         
     }
      @keyframes fadeIn{
         0%{opacity:0; }
@@ -154,15 +165,17 @@ p{
     }
     
     @keyframes logoCombineBack {
-         from{transform: translate(21px,14px)
+         from{transform: translate(21px,14px); opacity: 0
              }
-        to{transform: translate(0,0)
+        to{transform: translate(0,0);opacity: 1
             }
     }
+
+//trying differnt way but all turn out the same
         @keyframes logoCombineFront {
-         0%{transform: translate(-27px,-11px)
+         0%{transform: translate(-27px,-11px); opacity: 0
              }
-        100%{opacity: .75}
+        100%{opacity: 1}
     }
  
 
